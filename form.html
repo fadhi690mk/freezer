@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class="container">
+        <form action="database.php" method="post">
+            <div class="form-box" id="form-box-first">
+                <div class="input-box" id="input-box-cooling">
+                    <input type="text" name="cooling" class="my-input" id="my-input-cooling" required>
+                    <span class="icon rotatespan" id="icon"><i class='bx bx-chevron-down'></i></span>
+                    <label for="">Type koel-/vriescel</label>
+                </div>
+                <div class="input-box" id="input-box-m-width">
+                    <input type="text" name="m-width" class="my-input" id="my-input-m-width"  >
+                    <span class="icon" id="icon"><i class='bx bxs-pencil'></i></span>
+                    <label for="">Afmetingen-Breedte</label>
+                </div>
+                <div class="input-box" id="input-box-m-depth">
+                    <input type="text" name="m-depth" class="my-input" id="my-input-m-depth"  >
+                    <span class="icon" id="icon"><i class='bx bxs-pencil'></i></span>
+                    <label for="">Afmetingen-Diepte</label>
+                </div>
+                <div class="input-box" id="input-box-m-height">
+                    <input type="text" name="m-height" class="my-input" id="my-input-m-height"  >
+                    <span class="icon" id="icon"><i class='bx bxs-pencil'></i></span>
+                    <label for="">Afmetingen-Hoogte</label>
+                </div>
+                <div class="input-box" id="input-box-thickness">
+                    <input type="text" name="thickness" class="my-input" id="my-input-thickness" placeholder="Andere dikte, namelijk:" >
+                    <span class="icon" id="icon"><i class='bx bxs-pencil'></i></span>
+                    <label for="">Wanddikte</label>
+                </div>
+                <div class="input-box" id="input-box-floor">
+                    <input type="text" name="floor" class="my-input" id="my-input-floor" required>
+                    <span class="icon rotatespan" id="icon"><i class='bx bx-chevron-down'></i></span>
+                    <label for="">Vloer</label>
+                </div>
+                <div class="input-box" id="input-box-doortype">
+                    <input type="text" name="doortype" class="my-input" id="my-input-doortype" required>
+                    <span class="icon rotatespan" id="icon"><i class='bx bx-chevron-down'></i></span>
+                    <label for="">Deurtype</label>
+                </div>
+                
+              
+                
+                <ul class="dropdown" id="dropdown-cooling">
+                    <li class="dropdown-li" id=" ">Koelcel met motor</li>
+                    <li class="dropdown-li" id=" ">Vriescel met motor</li>
+                </ul>
+                
+                <ul class="dropdown" id="dropdown-thickness">
+                    <li class="dropdown-li" id=" ">Dikte 60 mm</li>
+                    <li class="dropdown-li" id=" ">Dikte 70 mm</li>
+                    <li class="dropdown-li" id=" ">Dikte 80 mm</li>
+                    <li class="dropdown-li" id=" ">Dikte 100 mm</li>
+                    <li class="dropdown-li" id=" ">Dikte 130 mm</li>
+                    <li class="dropdown-li" id=" ">Dikte 140 mm</li>
+                </ul>
+                <p class="reminder" id="reminder-thickness">Bij vriescellen raden wij een minimale wanddikte van 80 mm aan. Hoe dikker de wand, hoe lager het energieverbuik!</p>
+                
+                <ul class="dropdown" id="dropdown-floor">
+                    <li class="dropdown-li" id=" ">Met Vloer</li>
+                    <li class="dropdown-li" id=" ">Zonder Vloer</li>
+                </ul>
+                
+                <ul class="dropdown" id="dropdown-doortype">
+                    <li class="dropdown-li" id=" ">Draaideur</li>
+                    <li class="dropdown-li" id=" ">Schuifdeur</li>
+                </ul>
+               
+                
+                
+            </div>
+            <div class="form-box" id="form-box-second">
+                <div class="input-box" id="input-box-doorlocation">
+                    <input type="text" name="doorlocation" class="my-input" id="my-input-doorlocation"  >
+                    <span class="icon rotatespan" id="icon"><i class='bx bx-chevron-down'></i></span>
+                    <label for="">Locatie deur</label>
+                </div>
+                <div class="input-box" id="input-box-dooropeningwidth">
+                    <input type="text" name="dooropeningwidth" class="my-input" id="my-input-dooropeningwidth"  >
+                    <span class="icon" id="icon"><i class='bx bxs-pencil'></i></span>
+                    <label for="">Breedte deuropening</label>
+                </div>
+                <div class="input-box" id="input-box-coolingunit">
+                    <input type="text" name="coolingunit" class="my-input" id="my-input-coolingunit" required>
+                    <span class="icon rotatespan" id="icon"><i class='bx bx-chevron-down'></i></span>
+                    <label for="">Type koel-/vriesunit</label>
+                </div>
+                <div class="input-box" id="input-box-installation">
+                    <input type="text" name="installation" class="my-input" id="my-input-installation" required>
+                    <span class="icon rotatespan" id="icon"><i class='bx bx-chevron-down'></i></span>
+                    <label for="">Installatie</label>
+                </div>
+                <div class="input-box" id="input-box-stripcurtain">
+                    <input type="text" name="stripcurtain" class="my-input" id="my-input-stripcurtain" required>
+                    <span class="icon rotatespan" id="icon"><i class='bx bx-chevron-down'></i></span>
+                    <label for="">Strokengordijn</label>
+                </div>
+                <div class="input-box" id="input-box-floorbeams">
+                    <input type="text" name="floorbeams" class="my-input" id="my-input-floorbeams" required>
+                    <span class="icon rotatespan" id="icon"><i class='bx bx-chevron-down'></i></span>
+                    <label for="">Vloerbalken</label>
+                </div>
+                <div class="input-box" id="input-box-racking">
+                    <input type="text" name="racking" class="my-input" id="my-input-racking" required>
+                    <span class="icon rotatespan" id="icon"><i class='bx bx-chevron-down'></i></span>
+                    <label for="">Rekwerk</label>
+                </div>
+                
+              
+                
+                <ul class="dropdown" id="dropdown-doorlocation">
+                    <li class="dropdown-li" id=" ">Voorkant-Links</li>
+                    <li class="dropdown-li" id=" ">Voorkant-Midden</li>
+                    <li class="dropdown-li" id=" ">Voorkant-Rechts</li>
+                    <li class="dropdown-li" id=" ">Zijkant-Links</li>
+                    <li class="dropdown-li" id=" ">Zijkant-Midden</li>
+                    <li class="dropdown-li" id=" ">Zijkant-Rechts</li>
+                </ul>
+                
+                <ul class="dropdown" id="dropdown-coolingunit">
+                    <li class="dropdown-li" id=" ">Wandunit, gemonteerd in de wand van de cel</li>
+                    <li class="dropdown-li" id=" ">Plafondunit, gemonteerd in het plafond van de cel</li>
+                    <li class="dropdown-li" id=" ">Splitunit, gemonteerd in de cel en buiten het gebouw</li>
+                </ul>
+                <p class="reminder" id="reminder-coolingunit">Een wandunit wordt gemonteerd aan de wand van de cel (binnen- en buitenkant). Een plafondunit wordt gemonteerd in het plafond van de cel (binnen- en buitenkant) Een splitunit wordt bestaat uit een deel aan de binnenkant van de cel en een deel buiten het gebouw, met elkaar verbonden door middel van leidingwerk.</p>
+                
+                <ul class="dropdown" id="dropdown-installation">
+                    <li class="dropdown-li" id=" ">Ja</li>
+                    <li class="dropdown-li" id=" ">Nee</li>
+                </ul>
+                <p class="reminder" id="reminder-installation">Wil je de montage en installatie door ons laten uitvoeren? Dat kan zeker!</p>
+                
+                <ul class="dropdown" id="dropdown-stripcurtain">
+                    <li class="dropdown-li" id=" ">Ja</li>
+                    <li class="dropdown-li" id=" ">Nee</li>
+                </ul>
+                <p class="reminder" id="reminder-stripcurtain">Een strokengordijn zorgt voor minder koudeverlies bij het openen van de deur en bespaart daardoor energie.</p>
+                
+                <ul class="dropdown" id="dropdown-floorbeams">
+                    <li class="dropdown-li" id=" ">Ja</li>
+                    <li class="dropdown-li" id=" ">Nee</li>
+                </ul>
+                <p class="reminder" id="reminder-floorbeams">Vloerbalken raden wij met name aan bij vriescellen. Deze zorgen voor extra isolatie en minder condensvorming. Vloerbalken worden onder de cel geplaatst en zijn ca. 40 - 45 mm hoog.</p>
+                
+                <ul class="dropdown" id="dropdown-racking">
+                    <li class="dropdown-li" id=" ">Geen rekwerk</li>
+                    <li class="dropdown-li" id=" ">Recht rekwerk</li>
+                    <li class="dropdown-li" id=" ">L-vormig rekwerk</li>
+                    <li class="dropdown-li" id=" ">U-vormig rekwerk</li>
+                </ul>
+               
+                
+            </div>
+            <div class="form-box" id="form-box-third">
+                <textarea name="notes" id="" cols="30" rows="6" placeholder="Opmerkingen"></textarea>
+                <div class="input-box" id="input-box-companyname">
+                    <input type="text" name="companyname" class="my-input" id="my-input-companyname" required>
+                    <span class="icon" id="icon"><i class='bx bxs-shopping-bags'></i></i></span>
+                    <label for="">Bedrijfsnaam</label>
+                </div>
+                <div class="input-box" id="input-box-contactperson">
+                    <input type="text" name="contactperson" class="my-input" id="my-input-contactperson" required>
+                    <span class="icon" id="icon"><i class='bx bx-user'></i></span>
+                    <label for="">Contactpersoon</label>
+                </div>
+                <div class="input-box" id="input-box-telephonenumber">
+                    <input type="text" name="telephonenumber" class="my-input" id="my-input-telephonenumber" required>
+                    <span class="icon" id="icon"><i class='bx bxs-phone'></i></span>
+                    <label for="">Telefoonnummer</label>
+                </div>
+                <div class="input-box" id="input-box-emailaddress">
+                    <input type="text" name="emailaddress" class="my-input" id="my-input-emailaddress" required>
+                    <span class="icon" id="icon"><i class='bx bxs-envelope'></i></span>
+                    <label for="">E-mailadres</label>
+                </div>
+                <button type="submit" name="submit" id="submit" >Aanvraag verzenden</button>
+                
+            </div>
+        </form>
+        
+       
+    </div>
+
+<script src="styling-script.js"></script>  
+</body>
+</html>

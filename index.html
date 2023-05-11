@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+    <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    list-style: none;
+}
+body{
+    background-color: #333131;
+}
+    
+.container{
+    margin: 10vh 10%;
+    background-color: rgba(255, 255, 255);
+    width: 80%;
+    height: 80vh;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+} 
+button{
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 900;
+    border: none;
+    transition: 0.3s;
+    background-color: rgb(0, 100, 231);
+    color: #fff;
+}   
+button:hover{
+    transform: scale(1.1);
+    background-color: #f0732a;
+    
+}
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+        <button onclick="goToPage()">view form</button>
+    </div>
+
+    <script>
+        function goToPage() {
+          window.location.href = "form.html";
+        }
+        </script>
+</body>
+</html>
